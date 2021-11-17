@@ -250,14 +250,15 @@ button {
 .team-section {
   max-width: 1600px;
   /* height: 648px; */
-  /* border: 2px solid green; */
+  border: 2px solid green;
   margin: 0 auto;
   background-color: #f5f4fa;
   padding: 94px 215px;
 }
-/* .team-container {
-  width: 1200px;
-} */
+.team-container {
+  margin: 0 auto;
+  border: 2px solid green;
+}
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -403,6 +404,8 @@ button {
   margin-bottom: 0;
 } */
 .portfolio-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 .card-section {
   padding: 94px 0;
@@ -411,10 +414,11 @@ button {
 .list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  outline: 2px solid red;
+  justify-content: space-around;
 }
 .list .item {
+  /* width: calc(100% / 3 - 30px) */
+  box-sizing: border-box;
   width: calc((100% - 60px) / 3);
   margin-bottom: 30px;
   background: #ffffff;
